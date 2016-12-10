@@ -5,7 +5,8 @@ class Services extends Component {
     return (
       <section className="services">
         <h1>Services</h1>
-        // Here we will put our components
+
+        {/*Here we will put our components*/}
       </section>
     );
   }

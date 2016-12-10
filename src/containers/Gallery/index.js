@@ -5,7 +5,8 @@ class Gallery extends Component {
     return (
       <section className="gallery">
         <h1>Gallery</h1>
-        // Here we will put our components
+
+        {/*Here we will put our components*/}
       </section>
     );
   }

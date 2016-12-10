@@ -5,7 +5,8 @@ class WorkingHours extends Component {
     return (
       <section className="working-hours">
         <h1>Working Hours</h1>
-        // Here we will put our components
+
+        {/*Here we will put our components*/}
       </section>
     );
   }

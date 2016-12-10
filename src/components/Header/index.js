@@ -5,7 +5,7 @@ import './style/index.css';
 
 const Header = () => {
   return (
-    <Nav bsStyle="pills">
+    <Nav bsStyle="tabs">
       <IndexLinkContainer to="/">
         <NavItem eventKey={1}>My salon</NavItem>
       </IndexLinkContainer>

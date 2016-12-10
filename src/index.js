@@ -4,8 +4,6 @@ import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
 
-import './index.css';
-
 import Layout from './containers/Layout';
 import MySalon from './containers/MySalon';
 import Location from './containers/Location';
@@ -21,7 +19,7 @@ const router = (
     <Route path="/" component={Layout}>
       <IndexRoute component={MySalon}/>
       <Route path="location" component={Location}/>
-      <Route path="sevices" component={Services}/>
+      <Route path="services" component={Services}/>
       <Route path="artists" component={Artists}/>
       <Route path="workinghours" component={WorkingHours}/>
       <Route path="gallery" component={Gallery}/>

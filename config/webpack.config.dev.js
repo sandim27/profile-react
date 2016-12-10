@@ -1,4 +1,6 @@
 var autoprefixer = require('autoprefixer');
+var postcssBreakpoints = require('postcss-breakpoints');
+var postcssNested = require('postcss-nested');
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
@@ -132,6 +134,11 @@ module.exports = {
           cacheDirectory: true
         }
       },
+      {
+        test: /\.scss/,
+        include: paths.appSrc,
+        loaders: ["style", "css", "sass"]
+      },
       // "postcss" loader applies autoprefixer to our CSS.
       // "css" loader resolves paths in CSS and adds assets as dependencies.
       // "style" loader turns CSS into JS modules that inject <style> tags.
@@ -169,6 +176,8 @@ module.exports = {
           'not ie < 9', // React doesn't support IE8 anyway
         ]
       }),
+      postcssBreakpoints(),
+      postcssNested()
     ];
   },
   plugins: [

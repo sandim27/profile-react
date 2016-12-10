@@ -1,0 +1,9 @@
+@breakpoint 0 543px {
+    body {
+        background: red;
+        h1{
+         color: green;
+        }
+    }
+}
+

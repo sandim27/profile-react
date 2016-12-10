@@ -5,7 +5,8 @@ class Location extends Component {
     return (
       <section className="location">
         <h1>Location</h1>
-        // Here we will put our components
+
+        {/*Here we will put our components*/}
       </section>
     );
   }

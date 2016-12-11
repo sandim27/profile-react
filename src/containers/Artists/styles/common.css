@@ -1,0 +1,156 @@
+form {
+  padding-top: 40px;
+  .col {
+    padding: 0;
+  }
+  .select-days{
+  max-width:100px;
+  }
+  p{
+    margin-bottom:20px;
+  }
+  .group-inputs{
+    position:relative;
+  }
+  .buttons-invitation{
+    display: flex;
+    flex-wrap: wrap;
+    input{
+      margin-right:30px;
+    }
+  }
+  section{
+    clear:both;
+    display: block;
+  }
+  .form-control{
+    height:31px;
+  }
+  .photo-area{
+    height:280px;
+    width:220px;
+    border-radius:3px;
+    border:1px solid #444;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    .under-text{
+      position: absolute;
+      z-index: 1;
+    }
+  }
+  .col-photo{
+    display:flex;
+    justify-content:center;
+  }
+  .photo-block{
+    h3{
+      margin:0 0 10px 0;
+    }
+    p{
+      text-align:center;
+    }
+  }
+  button{
+    height:31px;
+  }
+  .button-save{
+    clear:both;
+    display:block;
+    padding-left:40px;
+    padding-right:40px;
+    margin-top:40px;
+  }
+  .buttons-block{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    span{
+      position:absolute;
+      bottom: -16px;
+    }
+  }
+}
+
+.personal-info{
+  .form-control {
+    max-width: 400px;
+    margin-bottom: 20px;
+  }
+  .form-group{
+    margin-bottom:50px;
+  }
+}
+
+.personal-days{
+  height:80px;
+  margin-bottom: 10px;
+}
+
+.block-time{
+  max-width: 310px;
+  display: flex;
+  justify-content: space-between;
+  .checkbox {
+    margin: 0;
+    label{
+      height:31px;
+      width: 60px;
+      border-radius: 5px;
+      display: block;
+      position:relative;
+      overflow:hidden;
+      padding:0;
+      cursor:pointer;
+      border: 1px solid #ccc;
+      input{
+        display:none;
+      &:checked + .under-text {
+         background-color: #0074D9;
+         color:#fff;
+      }
+      &:checked + .under-text:after {
+         content:'On';
+      }
+      &:checked + .under-text + .check-dump {
+         left:46px;
+       }
+      }
+      .under-text{
+        font-size: 20px;
+        line-height:30px;
+        position: absolute;
+        z-index: 1;
+        height:100%;
+        width: 100%;
+        background-color: #ddd;
+        color:#555;
+        transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        &:after{
+          content:'Off';
+          display: flex;
+          justify-content: center;
+          justify-items: center;
+        }
+      }
+      .check-dump{
+        position: absolute;
+        left:0;
+        z-index: 2;
+        height:100%;
+        width: 14px;
+        background-color: #fff;
+        border-radius: 3px;
+        transition: left 0.3s ease;
+        -webkit-transition: left 0.3s ease;
+      }
+    }
+  }
+
+  select{
+    padding: 6px 5px;
+  }
+}
+

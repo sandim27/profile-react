@@ -1,0 +1,14 @@
+#root{
+  @breakpoint 0 900px {
+    margin-top:0px;
+  }
+}
+
+h1{
+  @breakpoint 0 900px {
+    font-size: 28px;
+  }
+  @breakpoint 0 479px {
+    position: static;
+  }
+}

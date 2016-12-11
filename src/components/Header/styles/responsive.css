@@ -1,0 +1,31 @@
+nav {
+  @breakpoint 0 479px {
+    padding-top: 20px;
+  }
+  ul {
+    @breakpoint 0 479px {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+
+  a {
+    @breakpoint 0px 900px {
+      font-size: 16px;
+    }
+  }
+}
+
+.link-me{
+  @breakpoint 480px 900px {
+    top: 10px;
+  }
+  @breakpoint 0 479px {
+    position: relative;
+    right:0;
+    top:0;
+    text-align: center;
+    display: block;
+  }
+}

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Header from '../../components/Header';
 
-import './style/index.css'
+import './styles/index.css'
 
 class Layout extends Component {
   render() {

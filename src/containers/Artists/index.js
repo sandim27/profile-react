@@ -7,11 +7,11 @@ class App extends Component {
     return (
       <div className="wrapper form">
         <h1>Profile</h1>
+        <Button bsStyle="primary" bsSize="small"> &larr; Back</Button>
         <form className="form_top">
-          <Button bsStyle="primary" bsSize="small"> &larr; Back</Button>
-          <h2>Add new artist</h2>
           <section className="personal-info">
             <Col xs={12} md={8} className="col col-inputs">
+              <h2>Add new artist</h2>
               <FormGroup controlId="formValidationNull" validationState={null}>
                 <ControlLabel>Name</ControlLabel>
                 <FormControl type="text" placeholder="First"/>
@@ -20,8 +20,8 @@ class App extends Component {
               <FormGroup controlId="formValidationNull" validationState={null}>
                 <ControlLabel>E-mail &amp; phone</ControlLabel>
                 <h4>Why do we need it ?</h4>
-                <p>So we may share latest schedule updates witch your Artists.<br/>
-                  Each artist will see only his or her schedule. <br/>
+                <p>So we may share latest schedule updates witch your Artists.
+                  Each artist will see only his or her schedule.
                   Neither phone or e-mail of your Artists will be visible to public.
                 </p>
                 <div className="group-inputs">
@@ -139,7 +139,9 @@ class App extends Component {
               </FormControl>
             </Col>
           </section>
-          <Button bsStyle="primary" bsSize="small" className="button-save">Save</Button>
+          <div className="button-save">
+            <Button bsStyle="primary" bsSize="small" >Save</Button>
+          </div>
         </form>
       </div>
     );

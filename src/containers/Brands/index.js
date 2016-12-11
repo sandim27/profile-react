@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
+import TestText from '../../components/TestText';
 
 class Brands extends Component {
   render() {
     return (
-      <section className="brands">
+      <div className="wrapper brands">
         <h1>Brands</h1>
-
-        {/*Here we will put our components*/}
-      </section>
+        <TestText>Brands</TestText>
+      </div>
     );
   }
 }

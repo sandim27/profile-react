@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
+import TestText from '../../components/TestText';
 
 class MySalon extends Component {
   render() {
     return (
-      <section className="my-salon">
-        <h1>My Salon</h1>
-
-        {/*Here we will put our components*/}
-      </section>
+      <div className="wrapper mysalon">
+        <h1>My salon</h1>
+        <TestText>MySalon</TestText>
+      </div>
     );
   }
 }

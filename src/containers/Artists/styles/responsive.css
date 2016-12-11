@@ -1,0 +1,71 @@
+form{
+  .col,.button-save {
+    @breakpoint 0 1000px {
+      float: none;
+      width:100%;
+    }
+    @breakpoint 740px 1000px {
+      max-width: 51%;
+    }
+    @breakpoint 480px 739px {
+      max-width: 80%;
+    }
+    @breakpoint 0 479px {
+      max-width: 100%;
+    }
+  }
+  .button-save{
+    @breakpoint 0 1000px {
+      margin: 40px auto 0 auto;
+    }
+  }
+}
+
+.personal-info{
+  @breakpoint 0 1000px {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    margin-bottom:40px;
+  }
+  .form-control{
+    @breakpoint 0 1000px {
+      max-width: 100%;
+      margin-right:0;
+    }
+  }
+  .buttons-block{
+    @breakpoint 0 1000px {
+      margin-bottom: 30px;
+    }
+    span{
+      @breakpoint 0 1000px {
+        bottom: 0;
+        top: 0;
+        left: 130px;
+        width: 100px;
+      }
+    }
+  }
+}
+
+.personal-days{
+  @breakpoint 0 1000px {
+    height: auto;
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .select-days{
+    @breakpoint 0 480px {
+      max-width: 86px;
+      font-size: 11px;
+    }
+  }
+  .under-text{
+    @breakpoint 0 480px {
+      font-size: 14px!important;
+    }
+  }
+}

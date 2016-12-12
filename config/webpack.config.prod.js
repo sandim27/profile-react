@@ -1,4 +1,6 @@
 var autoprefixer = require('autoprefixer');
+var postcssBreakpoints = require('postcss-breakpoints');
+var postcssNested = require('postcss-nested');
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
@@ -137,6 +139,11 @@ module.exports = {
         loader: 'babel',
         
       },
+      {
+        test: /\.scss/,
+        include: paths.appSrc,
+        loaders: ["style", "css", "sass"]
+      },
       // The notation here is somewhat confusing.
       // "postcss" loader applies autoprefixer to our CSS.
       // "css" loader resolves paths in CSS and adds assets as dependencies.
@@ -182,6 +189,8 @@ module.exports = {
           'not ie < 9', // React doesn't support IE8 anyway
         ]
       }),
+      postcssBreakpoints(),
+      postcssNested()
     ];
   },
   plugins: [

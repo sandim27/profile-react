@@ -47,6 +47,25 @@ p {
   font-family: sans-serif;
 }
 
-.personal-info p{
+.personal-info p {
   max-width: 418px;
+}
+
+.hidden {
+  display: none !important;
+}
+.success {
+  color: #006600 !important;
+}
+#photo-file{
+  display:none;
+}
+
+.success-saved {
+  color: #006600 !important;
+  font-weight:border;
+  text-transform: uppercase;
+  position:absolute;
+  left:120px;
+  top: 10px;
 }
